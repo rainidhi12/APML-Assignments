@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spam Classification Result</title>
+    <!-- Add any other head elements (stylesheets, scripts, etc.) here -->
+</head>
+<body>
+    <h1>Spam or Not?</h1>
+    <p>Your input text:</p>
+    <p>{{ request.form.get("text") }}</p>
+    <p>Prediction:</p>
+    <p>{{ prediction }}</p>
+</body>
+</html>
