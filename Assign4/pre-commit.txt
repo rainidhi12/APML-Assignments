@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Run tests before allowing commit
+if python "Assign4/test.py"; then
+    echo "Tests passed. Committing changes..."
+    git add "Assign4/test_results.txt"
+    git commit --no-verify -m "Add test results"
+else
+    echo "Tests failed. Commit aborted."
+    exit 1
+fi
